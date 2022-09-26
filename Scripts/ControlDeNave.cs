@@ -17,6 +17,7 @@ public class ControlDeNave : MonoBehaviour
         ProcesarImput();
     }
 
+    //metodo privado que sirve para saber que tecla se esta pulsando
     private void ProcesarImput()
     {
         if(Input.GetKey(KeyCode.Space))
