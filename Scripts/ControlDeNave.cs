@@ -21,15 +21,15 @@ public class ControlDeNave : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Space))
         {
-            print("Propulsor...");
+            print("Propulsor de la Nave...");
         }
         if(Input.GetKey(KeyCode.D))
         {
-            print("Rotar Derecha...");
+            print("Girar a la Derecha...");
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            print("Rotar Izquierda...");
+            print("Girar a la Izquierda...");
         }
     }
 }
