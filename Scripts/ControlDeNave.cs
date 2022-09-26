@@ -13,14 +13,14 @@ public class ControlDeNave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //print("hoalj");
+        //print("hola");
         ProcesarImput();
     }
 
     //metodo privado que sirbe para saber que tecla se esta pulsando quien juega
     private void ProcesarImput()
     
-    //esta condicion nos dice que tecla es la que esta ciendo pusada
+        //esta condicion nos dice que tecla es la que esta ciendo pusada
         if(Input.GetKey(KeyCode.Space))
         {
             print("Propulsor de la Nave...");
