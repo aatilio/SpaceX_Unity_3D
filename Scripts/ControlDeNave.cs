@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ControlDeNave : MonoBehaviour
 {
+    Rigidbody rigidbody;
     // Start is called before the first frame update
     void Start()
     {
-
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -23,7 +24,8 @@ public class ControlDeNave : MonoBehaviour
         //esta condicion nos dice que tecla es la que esta ciendo pusada
         if(Input.GetKey(KeyCode.Space))
         {
-            print("Propulsor de la Nave...");
+            //print("Propulsor de la Nave...");
+            GetComponent<Rigidbody>().AddRelativeForce(Vector3.up);
         }
         if(Input.GetKey(KeyCode.D))
         {
