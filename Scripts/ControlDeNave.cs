@@ -18,7 +18,7 @@ public class ControlDeNave : MonoBehaviour
         ProcesarImput();
     }
 
-    //metodo privado que sirbe para saber que tecla se esta pulsando quien juega
+    //metodo privado que sirbe para saber que tecla se esta pulsando
     private void ProcesarImput()
     { 
         //esta condicion nos dice que tecla es la que esta ciendo pusada
