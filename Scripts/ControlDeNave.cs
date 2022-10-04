@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//rocket
 public class ControlDeNave : MonoBehaviour
 {
     Rigidbody rigidbody;
