@@ -29,33 +29,45 @@ public class ControlDeNave : MonoBehaviour
             //print("Propulsor de la Nave...");
             GetComponent<Rigidbody>().AddRelativeForce(Vector3.up);
         }
+        //ROTACION DERECHA IZQUIERDA
         if (Input.GetKey(KeyCode.Q))
         {
-            //print("Girar a la Derecha...");
-            var rotarDerecha = transform.rotation;
-            rotarDerecha.x -= Time.deltaTime * 1;
-            transform.rotation = rotarDerecha;
+            var rotarIzquierda = transform.rotation;
+            rotarIzquierda.x -= Time.deltaTime * 1;
+            transform.rotation = rotarIzquierda;
         }
         else if (Input.GetKey(KeyCode.E))
         {
-            //print("Girar a la Izquierda...");
-            var rotarIzquierda = transform.rotation;
-            rotarIzquierda.x += Time.deltaTime * 1;
-            transform.rotation = rotarIzquierda;
+            var rotarDerecha = transform.rotation;
+            rotarDerecha.x += Time.deltaTime * 1;
+            transform.rotation = rotarDerecha;
         }
+        //TRASLACION DERECHA IZQUIERDA
         else if (Input.GetKey(KeyCode.A))
         {
-            //print("Girar a la Izquierda...");
-            var positionDerecha = transform.position;
-            positionDerecha.x -= Time.deltaTime * 10;
-            transform.position = positionDerecha;
+            var positionIzquierda = transform.position;
+            positionIzquierda.x -= Time.deltaTime * 10;
+            transform.position = positionIzquierda;
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            //print("Girar a la Izquierda...");
-            var positionIzquierda = transform.position;
-            positionIzquierda.x += Time.deltaTime * 10;
-            transform.position = positionIzquierda;
+            var positionDerecha = transform.position;
+            positionDerecha.x += Time.deltaTime * 10;
+            transform.position = positionDerecha;
+
+        }
+        //ROTAR HACIA ADELANTE Y ATRAS
+        else if (Input.GetKey(KeyCode.W))
+        {
+            var rotarAdelante = transform.rotation;
+            rotarAdelante.z += Time.deltaTime * 1;
+            transform.rotation = rotarAdelante;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            var rotarAtras = transform.rotation;
+            rotarAtras.z -= Time.deltaTime * 1;
+            transform.rotation = rotarAtras;
         }
     }
 }
