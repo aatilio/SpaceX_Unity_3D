@@ -23,7 +23,7 @@ public class ControlDeNave : MonoBehaviour
     //metodo privado que sirbe para saber que tecla se esta pulsando
     private void ProcesarImput()
     {
-        //esta condicion nos dice que tecla es la que esta ciendo pusada
+        //esta condicion nos dice que tecla es la que esta siendo pulsada
         if (Input.GetKey(KeyCode.Space))
         {
             //print("Propulsor de la Nave...");
@@ -42,6 +42,19 @@ public class ControlDeNave : MonoBehaviour
             rotarDerecha.x += Time.deltaTime * 1;
             transform.rotation = rotarDerecha;
         }
+        //ROTAR HACIA ADELANTE Y ATRAS
+        else if (Input.GetKey(KeyCode.W))
+        {
+            var rotarAdelante = transform.rotation;
+            rotarAdelante.z += Time.deltaTime * 1;
+            transform.rotation = rotarAdelante;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            var rotarAtras = transform.rotation;
+            rotarAtras.z -= Time.deltaTime * 1;
+            transform.rotation = rotarAtras;
+        }
         //TRASLACION DERECHA IZQUIERDA
         else if (Input.GetKey(KeyCode.A))
         {
@@ -55,19 +68,6 @@ public class ControlDeNave : MonoBehaviour
             positionDerecha.x += Time.deltaTime * 10;
             transform.position = positionDerecha;
 
-        }
-        //ROTAR HACIA ADELANTE Y ATRAS
-        else if (Input.GetKey(KeyCode.W))
-        {
-            var rotarAdelante = transform.rotation;
-            rotarAdelante.z += Time.deltaTime * 1;
-            transform.rotation = rotarAdelante;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            var rotarAtras = transform.rotation;
-            rotarAtras.z -= Time.deltaTime * 1;
-            transform.rotation = rotarAtras;
         }
     }
 }
