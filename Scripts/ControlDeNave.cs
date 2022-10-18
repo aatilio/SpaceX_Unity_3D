@@ -33,13 +33,13 @@ public class ControlDeNave : MonoBehaviour
         if (Input.GetKey(KeyCode.Q))
         {
             var rotarIzquierda = transform.rotation;
-            rotarIzquierda.x -= Time.deltaTime * 1;
+            rotarIzquierda.z += Time.deltaTime * 1;
             transform.rotation = rotarIzquierda;
         }
         else if (Input.GetKey(KeyCode.E))
         {
             var rotarDerecha = transform.rotation;
-            rotarDerecha.x += Time.deltaTime * 1;
+            rotarDerecha.z -= Time.deltaTime * 1;
             transform.rotation = rotarDerecha;
         }
         //TRASLACION DERECHA IZQUIERDA
@@ -60,13 +60,13 @@ public class ControlDeNave : MonoBehaviour
         else if (Input.GetKey(KeyCode.W))
         {
             var rotarAdelante = transform.rotation;
-            rotarAdelante.z += Time.deltaTime * 1;
+            rotarAdelante.x += Time.deltaTime * 1;
             transform.rotation = rotarAdelante;
         }
         else if (Input.GetKey(KeyCode.S))
         {
             var rotarAtras = transform.rotation;
-            rotarAtras.z -= Time.deltaTime * 1;
+            rotarAtras.x -= Time.deltaTime * 1;
             transform.rotation = rotarAtras;
         }
     }
