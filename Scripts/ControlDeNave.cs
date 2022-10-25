@@ -6,11 +6,13 @@ public class ControlDeNave : MonoBehaviour
 {
     Rigidbody rigidbody;
     Transform transform;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         transform = GetComponent<Transform>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,11 +25,19 @@ public class ControlDeNave : MonoBehaviour
     //metodo privado que sirbe para saber que tecla se esta pulsando
     private void ProcesarImput()
     {
-        //esta condicion nos dice que tecla es la que esta ciendo pusada
+        //esta condicion nos dice que tecla es la que esta siendo pulsada
         if (Input.GetKey(KeyCode.Space))
         {
             //print("Propulsor de la Nave...");
             GetComponent<Rigidbody>().AddRelativeForce(Vector3.up);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
         //ROTACION DERECHA IZQUIERDA
         if (Input.GetKey(KeyCode.Q))
