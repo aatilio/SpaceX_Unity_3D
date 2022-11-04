@@ -26,9 +26,9 @@ public class ControlDeNave : MonoBehaviour
     private void ProcesarImput()
     {
         Propulsion();
-        RotacionDerecheIzquierda();
+        RotacionDerechaIzquierda();
         RotacionAdelanteAtras();
-        TraslacionDerecheIzquierda();
+        TraslacionDerechaIzquierda();
     }
 
     public void Propulsion()
@@ -51,7 +51,7 @@ public class ControlDeNave : MonoBehaviour
         rigidbody.freezeRotation = false;
     }
 
-    public void RotacionDerecheIzquierda()
+    public void RotacionDerechaIzquierda()
     {
         //ROTACION DERECHA IZQUIERDA
         if (Input.GetKey(KeyCode.Q))
@@ -85,7 +85,7 @@ public class ControlDeNave : MonoBehaviour
         }
     }
 
-    public void TraslacionDerecheIzquierda()
+    public void TraslacionDerechaIzquierda()
     {
         //TRASLACION DERECHA IZQUIERDA
         if (Input.GetKey(KeyCode.A))
