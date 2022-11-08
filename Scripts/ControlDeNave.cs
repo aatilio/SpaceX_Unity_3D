@@ -30,7 +30,17 @@ public class ControlDeNave : MonoBehaviour
         RotacionAdelanteAtras();
         TraslacionDerechaIzquierda();
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("ColisionSegura"))
+        {
+            print("OK...");
+        }
+        else if (collision.gameObject.CompareTag("ColisionPeligrosa"))
+        {
+            print("PUNNNMMMM...");
+        }
+    }
     public void Propulsion()
     {
         //esta condicion nos dice que tecla es la que esta siendo pulsada
