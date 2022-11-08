@@ -32,14 +32,26 @@ public class ControlDeNave : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("ColisionSegura"))
+        switch (collision.gameObject.tag)
+        {
+            case "ColisionSegura":
+            print("OK...");
+            break;
+            case "ColisionPeligrosa":
+            print("PUMMMMNNN...");
+            break;
+            case "PlataformaPrincipal":
+            print("NAVE ESTABLE...");
+            break;
+        }
+        /*if (collision.gameObject.CompareTag("ColisionSegura"))
         {
             print("OK...");
         }
         else if (collision.gameObject.CompareTag("ColisionPeligrosa"))
         {
             print("PUNNNMMMM...");
-        }
+        }*/
     }
     public void Propulsion()
     {
