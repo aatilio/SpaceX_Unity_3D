@@ -136,8 +136,8 @@ GameObject:
   - component: {fileID: 316266263}
   - component: {fileID: 316266262}
   m_Layer: 0
-  m_Name: Plataforma2 (1)
-  m_TagString: Untagged
+  m_Name: PlataformaPeligrosa
+  m_TagString: ColisionPeligrosa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -768,8 +768,8 @@ GameObject:
   - component: {fileID: 1653872240}
   - component: {fileID: 1653872239}
   m_Layer: 0
-  m_Name: Plataforma2
-  m_TagString: Untagged
+  m_Name: PlataformaSegura
+  m_TagString: ColisionSegura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
