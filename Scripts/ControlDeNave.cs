@@ -35,14 +35,14 @@ public class ControlDeNave : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "ColisionSegura":
-            print("OK...");
-            break;
-            case "ColisionPeligrosa":
-            print("PUMMMMNNN...");
-            break;
-            case "PlataformaPrincipal":
-            print("NAVE ESTABLE...");
-            break;
+                print("OK...");
+                break;
+            case "Combustible":
+                print("Combustioble...");
+                break;
+            default:
+                print("Colisiona la Nave...");
+                break;
         }
         /*if (collision.gameObject.CompareTag("ColisionSegura"))
         {
