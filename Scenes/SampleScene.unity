@@ -391,14 +391,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.08198401, y: 0.05752253, z: 0.006265343, w: 0.99495256}
-  m_LocalPosition: {x: -14.612, y: 16.723, z: -93.269}
+  m_LocalRotation: {x: 0.0051603694, y: 0.003753525, z: 0.0010455981, w: 0.9999791}
+  m_LocalPosition: {x: 1.55, y: 45.03, z: -86.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -9.431, y: 6.603, z: 0.176}
+  m_LocalEulerAnglesHint: {x: 0.591, y: 0.431, z: 0.122}
 --- !u!1001 &1232245596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -605,6 +605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlataformaSegura
       objectReference: {fileID: 0}
+    - target: {fileID: 6873573024903566250, guid: a965b46b58e29de4097174079c7759bb, type: 3}
+      propertyPath: m_TagString
+      value: PlataformaCombustible
+      objectReference: {fileID: 0}
     - target: {fileID: 6873573024903566262, guid: a965b46b58e29de4097174079c7759bb, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -661,6 +665,10 @@ PrefabInstance:
     - target: {fileID: 8155229817188107052, guid: b4b50424dfb028846a41b849a5040d53, type: 3}
       propertyPath: m_Name
       value: Plataforma
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155229817188107052, guid: b4b50424dfb028846a41b849a5040d53, type: 3}
+      propertyPath: m_TagString
+      value: ColisionSegura
       objectReference: {fileID: 0}
     - target: {fileID: 8155229817188107056, guid: b4b50424dfb028846a41b849a5040d53, type: 3}
       propertyPath: m_RootOrder
