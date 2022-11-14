@@ -37,7 +37,7 @@ public class ControlDeNave : MonoBehaviour
             case "ColisionSegura":
                 print("OK...");
                 break;
-            case "Combustible":
+            case "PlataformaCombustible":
                 print("Combustioble...");
                 break;
             default:
