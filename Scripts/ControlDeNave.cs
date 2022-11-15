@@ -38,7 +38,7 @@ public class ControlDeNave : MonoBehaviour
                 print("OK...");
                 break;
             case "PlataformaCombustible":
-                print("Combustioble...");
+                print("Hechando combustible...");
                 break;
             default:
                 print("Colisiona la Nave...");
