@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlDeNave : MonoBehaviour
 {
@@ -39,9 +40,11 @@ public class ControlDeNave : MonoBehaviour
                 break;
             case "PlataformaCombustible":
                 print("Hechando combustible...");
+                SceneManager.LoadScene("Nivel-2");//nos lleva al nivel 2
                 break;
             default:
                 print("Colisiona la Nave...");
+                SceneManager.LoadScene("Nivel-1");//nos regresa al inicio
                 break;
         }
         /*if (collision.gameObject.CompareTag("ColisionSegura"))
