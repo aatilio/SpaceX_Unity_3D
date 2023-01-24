@@ -1,3 +1,10 @@
 # SpaceX_Unity_3D
 
-Este proyecto consta en que una Nave (Falcon9) parte desde una superficie e intenta llegar hasta una base kilometros arriba.
+**Juego en ejecucion**
+<br>
+![image](https://github.com/alanatilio/alanatilio.github.io/blob/main/crypto/cryp.jpg)
+<br><br>
+**Juego en ejecucion**
+<br>
+![image](https://github.com/alanatilio/alanatilio.github.io/blob/main/crypto/cryp.jpg)
+
