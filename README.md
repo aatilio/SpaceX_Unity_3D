@@ -3,24 +3,26 @@
 
 <h2 align="center">🗃️ Detalles</h2>
 
-1. Se diseñaron y desarrollaron 5 ecenas o niveles.
-<br>
-2. Sonido especial al momento de colisionar con:
-	A. Combustible.
-	B. Obstáculos y piso.
-	C. Plataforma de llegada.
-<br>
-3. Control de Puntaje (al momento de iniciar el nivel 1, el puntaje se vaya acumilando,
+<ol>
+  <li>Se diseñaron y desarrollaron 5 ecenas o niveles.</li>
+  <li>Sonido especial al momento de colisionar con:
+    <ul>
+      <li>Combustible.</li>
+      <li>Obstáculos y piso.</li>
+		<li>Plataforma de llegada.</li>
+    </ul>
+  </li>
+  <li>Control de Puntaje (al momento de iniciar el nivel 1, el puntaje se vaya acumilando,
 en el caso de colisionar con un obtaculo reducir puntaje maximo
 admiquirido en el mismo nivel contemplando un limite de colidiones
-peligrosas igual a 5).
-<br>
-4. Control de combustible (iniciar cada nivel con una cantidad de
+peligrosas igual a 5).</li>
+<li>Control de combustible (iniciar cada nivel con una cantidad de
 combustible, el cual iráreduciendoce segun el tiempo que demore para
-llegar a al plataforma de destino).
-<br>
-5. Movimiento (obstaculos en movimiento en los niveles superiores).)
-<br><br>
+llegar a al plataforma de destino).</li>
+<li>Movimiento (obstaculos en movimiento en los niveles superiores).</li>
+</ol>
+
+
 **Nivel 1**
 <br>
 ![image](https://github.com/aatilio/SpaceX_Unity_3D/blob/master/img/n1.jpg)
